@@ -9,7 +9,7 @@ nav.addEventListener('click', (event) => {
 
   const link = event.target.closest('.list-item__link');
 
-  if (link.getAttribute('href')) {
+  if (link && link.getAttribute('href')) {
     largeImg.src = `http://localhost:3001${link.getAttribute('href')}`;
   }
 
